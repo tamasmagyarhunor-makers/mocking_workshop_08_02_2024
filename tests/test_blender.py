@@ -70,3 +70,18 @@ def test_blender_makes_juice_with_a_fruit_and_calculates_calory():
     expected = 8
 
     assert actual == expected
+
+"""
+Given a Blender makes a Fruit juice with 2 Fruits
+It can calculate the juices calory.
+"""
+def test_blender_makes_juice_with_2_fruits_and_calculates_calory():
+    blender = Blender()
+    fruit = Fruit('orange', 8)
+    fruit2 = Fruit('mango', 13)
+    blender.add_fruit(fruit)
+    blender.add_fruit(fruit2)
+    actual = blender.calculate_calory()
+    expected = 21
+
+    assert actual == expected
