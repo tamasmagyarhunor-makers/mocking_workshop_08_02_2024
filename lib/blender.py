@@ -10,3 +10,6 @@ class Blender():
         for fruit in self.storage:
             fruit_names.append(fruit.get_name())
         return ", ".join(fruit_names) + " juice"
+    
+    def calculate_calory(self):
+        return self.storage[0].get_calory()

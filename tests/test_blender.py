@@ -41,19 +41,6 @@ def test_blender_makes_juice():
 
     assert actual == expected
 
-"""
-Given a Blender makes juice
-It returns a Fruit juice.
-"""
-def test_blender_makes_juice_with_mock():
-    blender = Blender()
-    fruit_mock = Mock()
-    blender.add_fruit(fruit_mock)
-    fruit_mock.get_name.return_value = 'orange'
-    actual = blender.make_juice()
-    expected = "orange juice"
-
-    assert actual == expected
 
 """
 Given a Blender makes juice with multiple Fruits
@@ -67,5 +54,19 @@ def test_blender_makes_juice_with_2_fruits():
     blender.add_fruit(fruit2)
     actual = blender.make_juice()
     expected = "orange, apple juice"
+
+    assert actual == expected
+
+
+"""
+Given a Blender makes a Fruit juice
+It can calculate the juices calory.
+"""
+def test_blender_makes_juice_with_a_fruit_and_calculates_calory():
+    blender = Blender()
+    fruit = Fruit('orange', 8)
+    blender.add_fruit(fruit)
+    actual = blender.calculate_calory()
+    expected = 8
 
     assert actual == expected
