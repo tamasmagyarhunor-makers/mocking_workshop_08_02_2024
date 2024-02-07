@@ -1,5 +1,13 @@
 # Mocking workshop 08 02 2024
 
+Setup instructions:
+```
+$ git clone git@github.com:tamasmagyarhunor-makers/mocking_workshop_08_02_2024.git
+$ cd mocking_workshop_08_02_2024
+$ pipenv intall
+$ pipenv run pytest -xv
+```
+
 Instructions:
 - please update the design_recipe with the following user story
 ```
