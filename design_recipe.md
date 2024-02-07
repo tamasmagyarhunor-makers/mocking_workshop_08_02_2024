@@ -10,6 +10,17 @@ As a Blender
 So that I can make juice
 I want to be able to make juice with Fruits.
 ```
+```
+As a Fruit
+So I can offer information about myself
+I want to be able to have a name and a calory.
+```
+
+```
+As a Blender
+So that I can help people diet
+I want to be able to calculate calory of a juice.
+```
 
 ## 2. Design the Function Signature
 
