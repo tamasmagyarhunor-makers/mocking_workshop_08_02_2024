@@ -14,5 +14,5 @@ class Blender():
     def calculate_calory(self):
         total_calory = 0
         for fruit in self.storage:
-            total_calory += fruit.get_calory()
+            total_calory += fruit.get_calory_int()
         return total_calory

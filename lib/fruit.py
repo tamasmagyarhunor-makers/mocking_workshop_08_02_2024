@@ -8,3 +8,6 @@ class Fruit():
     
     def get_calory(self):
         return f"This {self.name} has {self.calory} calories"
+    
+    def get_calory_int(self):
+        return self.calory
