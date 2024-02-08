@@ -7,4 +7,4 @@ class Fruit():
         return self.name
     
     def get_calory(self):
-        return self.calory
+        return f"This {self.name} has {self.calory} calories"

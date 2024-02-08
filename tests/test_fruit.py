@@ -20,6 +20,6 @@ def test_fruit_instantiates_with_calory():
     fruit = Fruit('kiwi', 10)
 
     actual = fruit.get_calory()
-    expected = 10
+    expected = 'This kiwi has 10 calories'
 
     assert actual == expected
