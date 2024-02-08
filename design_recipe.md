@@ -21,6 +21,11 @@ As a Blender
 So that I can help people diet
 I want to be able to calculate calory of a juice.
 ```
+```
+As a Business Stakeholder
+I would like the Fruit class to return the calory of a Fruit as a String
+So its more readable to our customers. eg. 'This [fruit_name] has [calory] calories'
+```
 
 ## 2. Design the Function Signature
 
@@ -81,7 +86,7 @@ class Fruit():
         """
     
     def get_calory(self):
-        return self.calory
+        return f"This {self.name} has {self.calories} calories"
         """It takes no argument and returns an integer.
 
         Parameters:
@@ -144,7 +149,7 @@ assert actual == expected
 Given a Fruit object is instantiated
 It intantiates with a name.
 """
-fruit = Fruit('apple')
+fruit = Fruit('apple', 10)
 
 actual = fruit.get_name()
 expected = 'apple'
@@ -155,12 +160,14 @@ assert actual == expected
 Given a Fruit object is instantiated
 It intantiates with a name.
 """
-fruit = Fruit('kiwi')
+fruit = Fruit('kiwi', 5)
 
 actual = fruit.get_calory()
-expected = 10
+expected = 'This kiwi has 5 calories'
 
 assert actual == expected
+
+
 
 
 ```
